@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<center>
+   
+    
+    <table width="50%" border="1" cellspacing="1" cellpadding="5">
+        <tr>
+            <th><center>userId</center></th>
+            <th><center>title</center></th>
+            <th><center>body</center></th>
+          
+           
+      
+            
+        </tr>
+       {% for a in arr %}
+           
+      
+        <tr>
+           <td><center>{{ a.userId }}</center></td>
+           <td><center>{{a.title}}</center></td>
+           <td><center>{{a.body}}</center></td>
+        
+      
+        </tr>
+           {% endfor %}    
+    </table>
+    </center>
+   
+    {% endblock %}
+    

@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<center>
+   
+    
+    <table width="50%" border="1" cellspacing="1" cellpadding="5">
+        <tr>
+            <th><center>title</center></th>
+            <th><center>auteur</center></th>
+            <th><center>contenu</center></th>
+           
+          
+           
+      
+            
+        </tr>
+       {% for a in arr %}
+           
+      
+        <tr>
+           <td><center>{{ a.title }}</center></td>
+           <td><center>{{a.auteur}}</center></td>
+           <td><center>{{a.contenu}}</center></td>
+          
+        
+      
+        </tr>
+           {% endfor %}    
+    </table>
+    </center>
+   
+    {% endblock %}
+    
